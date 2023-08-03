@@ -1,0 +1,21 @@
+<div id="container">
+    <div id="left">
+        wertywqe
+    </div>
+    <div id="main">
+        <div class="gallery">
+            <div class="card" *ngFor="let article of articleList$ | async">
+              <img src="{{ article.social_image }}" alt="" />
+              <div class="description">
+                <h1>Rana</h1>
+                <p>
+                  {{ article.user.name }}
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="right">
+        qweqeqwe
+    </div>
+</div>
